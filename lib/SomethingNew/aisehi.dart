@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 
 class MyPages extends StatefulWidget {
@@ -52,7 +53,7 @@ class _MyPagesState extends State<MyPages> with SingleTickerProviderStateMixin {
           child: Row(
             children: <Widget>[
               AnimatedProgressBar(
-                animation: _progressAnimation,
+                animation: _progressAnimation, key: null,
               ),
               Expanded(
                 child: Container(
@@ -106,15 +107,17 @@ class _MyPagesState extends State<MyPages> with SingleTickerProviderStateMixin {
 // import 'package:flutter/material.dart';
 
 class AnimatedProgressBar extends AnimatedWidget {
-  AnimatedProgressBar({Key key, Animation<double> animation})
+  AnimatedProgressBar({required Key key, required Animation<double> animation})
       : super(key: key, listenable: animation);
 
   Widget build(BuildContext context) {
-    final Animation<double> animation = listenable;
+    final Listenable animation = listenable;
+
     return Container(
       height: 6.0,
-      width: animation.value,
+      width: 80,
       decoration: BoxDecoration(color: Colors.white),
     );
   }
 }
+*/
