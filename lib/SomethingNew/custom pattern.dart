@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-//additional run args  "--no-sound-null-safety"
+
 void main() {
   runApp(const MyApp());
 }
